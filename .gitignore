@@ -9,6 +9,7 @@ __pycache__
 myvenv/
 venv/
 
+*.run
 # Database
 db.sqlite3
 
