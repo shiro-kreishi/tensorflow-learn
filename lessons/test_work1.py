@@ -4,9 +4,6 @@ from tensorflow.keras.layers import Dense
 from tensorflow.keras.datasets import mnist
 from tensorflow.keras.utils import to_categorical
 
-import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-
 # Загрузка и предобработка данных
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 x_train = x_train.reshape(-1, 28 * 28).astype('float32') / 255
