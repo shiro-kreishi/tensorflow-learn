@@ -12,7 +12,7 @@ if __name__ == '__main__':
 
     loss_fn = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=False)
     model.compile(optimizer="adam", loss=loss_fn, metrics=["accuracy"])
-    model.fit(x_train, y_train, epochs=5, batch_size=64)
+    model.fit(x_train, y_train, epochs=1, batch_size=64)
 
     test_loss, test_acc = model.evaluate(x_test, y_test)
     print(f'Test accuracy: {test_acc}')
